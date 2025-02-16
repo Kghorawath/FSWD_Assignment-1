@@ -1,0 +1,279 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    /* Enhanced Stylish Background */
+    body {
+        background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+        color: white;
+        position: relative;
+        overflow-x: hidden;
+    }
+    body {
+        background: linear-gradient(-45deg, #0a192f, #1c2e4a, #0f3460, #3a506b);
+        background-size: 400% 400%;
+        animation: gradientMove 10s ease infinite;
+        color: white;
+        position: relative;
+        overflow-x: hidden;
+    }
+    /* Background Animation */
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Floating Design Elements */
+    body::after {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(255, 94, 0, 0.3) 20%, transparent);
+        border-radius: 50%;
+        top: -50px;
+        left: -50px;
+        z-index: -1;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(0, 255, 255, 0.3) 20%, transparent);
+        border-radius: 50%;
+        bottom: -50px;
+        right: -50px;
+        z-index: -1;
+    }
+
+    /* Adding Abstract Lines */
+    #projects::after {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: url('https://www.transparenttextures.com/patterns/cubes.png');
+        opacity: 0.1;
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+    }
+
+    /* Soft Glowing Headings */
+    h2 {
+        text-shadow: 0px 0px 8px rgba(255, 165, 0, 0.6);
+    }
+
+    /* Neon Glow Effect for Buttons */
+    .hover\:bg-orange-600:hover {
+        box-shadow: 0 0 15px rgba(255, 94, 0, 0.7);
+    }
+
+    /* Cyan Highlight for Links */
+    a {
+        color: #00FFFF;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #FFA500;
+    }
+
+    /* Decorative Borders */
+    .border-orange-400 {
+        border: 2px solid #FFA500;
+    }
+
+    /* Soft Gradient Shadows for Sections */
+    .shadow-lg {
+        box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.2);
+    }
+
+
+    </style>
+        
+    </head>
+    <body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+
+        <!-- Navbar -->
+        <nav class="bg-gray-800 bg-opacity-90 p-4 fixed w-full top-0 shadow-lg z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Name & Resume Button -->
+                <div class="flex items-center space-x-4">
+                    <img src="\profile_photo.jpg" alt="Profile" class="w-10 h-10 rounded-full border-2 border-orange-400">
+                    <h1 class="text-2xl font-extrabold text-orange-400">Khushi Ghorawath</h1>
+                
+                </div>
+                
+                <!-- Navigation Links -->
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#about" class="hover:text-orange-400 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-orange-400 transition duration-300">Skills</a></li> 
+                    <li><a href="#projects" class="hover:text-orange-400 transition duration-300">Projects</a></li>
+                    
+                    <li><a href="#contact" class="hover:text-orange-400 transition duration-300">Contact</a></li>
+                    <li>
+                        <a href="\KHUSHI GHORAWATH RESUME1.pdf" download class="bg-orange-500 text-white px-4 py-2 text-sm rounded-lg font-medium shadow-md hover:bg-orange-600 transition duration-300">
+                            📄 Download Resume
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+            <h2 class="text-5xl font-extrabold">Hello, I'm <span class="text-cyan-400">Khushi Ghorawath</span></h2>
+            <p class="mt-4 text-lg text-gray-300">A Passionate Web Developer & Data Scientist.With hands-on experience in both fields, I continuously learn and explore new technologies.Currently, I am expanding my skills to create innovative solutions that push boundaries.</p>
+            <a href="#projects" class="mt-6 bg-orange-500 px-6 py-3 rounded-lg text-white text-lg font-medium shadow-md hover:bg-orange-600 transition duration-300">
+                View My Work
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 px-8 text-center bg-gray-800 shadow-lg">
+            <h2 class="text-4xl font-bold text-orange-400">About Me</h2>
+            <p class="mt-6 text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            
+
+    I am a passionate Web Developer and Data Science enthusiast who loves creating modern, efficient, and data-driven applications.With hands-on experience in both fields, I have developed several projects that showcase my skills and curiosity for problem-solving and innovation. Currently, I am in a phase of continuous learning and exploration, eager to push my boundaries and embrace new challenges.  
+
+    Beyond coding, I enjoy traveling and dancing, which fuel my creativity and keep me inspired. While I am an introvert personally, I am a confident and outgoing professional who thrives in collaborative environments and enjoys taking on challenges.
+                
+            
+            </p>
+        </section>
+         <!-- Skills Section -->
+<section id="skills" class="py-24 px-8 text-center">
+    <h2 class="text-4xl font-bold text-orange-400">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12 max-w-4xl mx-auto">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/1822/1822899.png" alt="Python" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">Python</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/2721/2721268.png" alt="ML" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">Machine Learning</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/888/888859.png" alt="HTML" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">HTML</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">CSS</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JavaScript" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">JavaScript</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/2772/2772128.png" alt="SQL" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">SQL</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732225.png" alt="Microsoft" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">Microsoft Tools</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="C C++" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">C / C++</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/921/921490.png" alt="Power BI" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">Power BI</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/3495/3495634.png" alt="Mathematical Skills" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">Mathematical Skills</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Figma" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">Figma</h3>
+        </div>
+        
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <img src="https://cdn-icons-png.flaticon.com/128/4194/4194926.png" alt="Exploratory Data Analysis" class="w-12 mx-auto">
+            <h3 class="text-xl font-semibold mt-3">Data Cleaning & Exploratory Data Analysis</h3>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <!-- Projects Section -->
+ <!-- Projects Section -->
+<section id="projects" class="py-24 px-8 text-center">
+    <h2 class="text-4xl font-bold text-orange-400">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        
+        <!-- My Health Journal -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <h3 class="text-2xl font-semibold text-white">My Health Journal</h3>
+            <p class="text-gray-400 mt-3">A web-based application that allows users to log daily health details like weight, blood pressure, and symptoms, helping them track their health progress effectively.</p>
+        </div>
+
+        <!-- E-Voting -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <h3 class="text-2xl font-semibold text-white">E-Voting</h3>
+            <p class="text-gray-400 mt-3">A secure online voting platform designed for convenience, allowing users to vote remotely with transparency while accessing political party details and election information.</p>
+        </div>
+
+        <!-- Emotion Detection
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <h3 class="text-2xl font-semibold text-white">Emotion Detection Using Deep Learning</h3>
+            <p class="text-gray-400 mt-3">A deep learning model that classifies facial expressions into emotions like happiness, sadness, and anger using Convolutional Neural Networks (CNNs).</p>
+        </div> -->
+
+        <!-- Data Cleaning & EDA on Google Play Store Dataset -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <h3 class="text-2xl font-semibold text-white">Data Cleaning & EDA on Google Play Store Dataset</h3>
+            <p class="text-gray-400 mt-3">Performed extensive data cleaning and exploratory data analysis (EDA) on the Google Play Store dataset to uncover trends in app downloads, ratings, and categories.</p>
+        </div>
+
+        <!-- Data Visualization Using Pandas, Seaborn & Matplotlib -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <h3 class="text-2xl font-semibold text-white">Data Visualization Using Pandas, Seaborn & Matplotlib</h3>
+            <p class="text-gray-400 mt-3">Created insightful visualizations using Pandas, Seaborn, and Matplotlib to analyze trends and patterns in a given dataset for better decision-making.</p>
+        </div>
+
+        <!-- Data Analysis Dashboard Using Power BI -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <h3 class="text-2xl font-semibold text-white">Data Analysis Dashboard Using Power BI</h3>
+            <p class="text-gray-400 mt-3">Developed an interactive Power BI dashboard that provides in-depth business insights through data visualization and real-time analytics.</p>
+        </div>
+
+        <!-- Hotel Management System Using Power BI -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 border border-gray-700">
+            <h3 class="text-2xl font-semibold text-white">Hotel Management System Using Power BI</h3>
+            <p class="text-gray-400 mt-3">Built a Power BI-based hotel management dashboard to track customer check-ins, bookings, revenue analysis, and overall performance insights.</p>
+        </div>
+
+    </div>
+</section>
+
+       
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-8 text-center bg-gray-800 shadow-lg">
+            <h2 class="text-4xl font-bold text-orange-400">Contact Me</h2>
+            <p class="mt-4 text-White-700">Feel free to reach out for collaborations or any inquiries.</p>
+            <p class="mt-6 text-White-300 text-lg">📩 Email: <a href="mailto:khushighorawath14.com" class="text-orange-400 hover:underline">khushighorawath14.com</a></p>
+        </section>
+            <!-- Footer -->
+            <footer class="bg-gray-900 text-white text-center py-5">
+                <p>&copy; 2025 Khushi Ghorawath. All rights reserved.</p>
+            </footer>
+
+    </body>
+    </html>
